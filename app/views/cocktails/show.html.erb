@@ -2,15 +2,13 @@
 <h1><%= @cocktail.name %></h1>
 <h3>Recipe for the Cocktail</h3>
 
-<p>
-  <strong>Dose Amount</strong>
-  <%= @cocktail.dose.description %>
-</p>
-
-<p>
-  <strong>Ingredients/strong>
-  <%= @cocktail.ingredients %>
-</p>
+<strong>Ingredients</strong>
+<% @cocktail.doses.each do |dose|%>
+  <div>
+    <%= dose.description %>
+    <%= dose.ingredient.name %>
+  </div>
+<% end %>
 
 <%= link_to 'Go back to cocktails list', cocktails_path  %>
 

@@ -1,0 +1,9 @@
+<h1>Doses#new</h1>
+<p>Find me in app/views/doses/new.html.erb</p>
+
+<h1>Add a  new dose </h1>
+
+<%= simple_form_for [@dose] do |f| %>
+  <%= f.input :description %>
+  <%= f.submit "Add dose", class: "btn btn-primary" %>
+<% end %>
