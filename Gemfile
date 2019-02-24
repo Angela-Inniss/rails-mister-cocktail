@@ -65,3 +65,7 @@ gem 'rails-controller-testing', group: [ :test ]
 
 gem 'simple_form'
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'cloudinary', '~> 1.9.1'
+# carrierwave image uploader
+gem 'carrierwave', '~> 1.2'
+
