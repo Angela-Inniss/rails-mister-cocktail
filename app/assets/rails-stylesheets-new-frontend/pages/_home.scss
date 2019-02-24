@@ -1,12 +1,37 @@
 // Specific CSS for your home-page
 //changes stuff on the index page (homepage)
+
 h1{
-color:purple;
-font-family: $headers-font;
-
+color:pink;
+font-family: 'Satisfy', cursive;
+font-size: 70px;
 }
 
+h2{
+
+
+}
 p {
-  color:
-pink
+  color:pink;
+
 }
+
+a{
+  color:orange;
+}
+
+.btn{
+  width:280px;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.banner {
+ background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+
+}
+
