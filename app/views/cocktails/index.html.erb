@@ -1,4 +1,14 @@
+
 <body>
+<div class="navbar d-flex">
+  <div class="logo">
+
+  </div>
+  <div class=" ">
+    <button type="button" class="btn btn-secondary btn-lg btn-block"><%= link_to 'Create a cocktail', new_cocktail_path %>
+    </button>
+  </div>
+</div>
 
   <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1452784444945-3f422708fe5e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80);">
     <div class="">
@@ -20,6 +30,5 @@
       <% end %>
     </div>
 
-    <button type="button" class="btn btn-secondary btn-lg btn-block"><%= link_to 'New Cocktail', new_cocktail_path %></button>
   </div>
 </body>
