@@ -1,3 +1,9 @@
+<!-- adding images from cloudinary and writing ruby make sure that if a
+user does not upload an image then don't let them create a cocktail. cl image tag is the tag used in combination with cloudinary to display an image  -->
+<% if @cocktail.photo.present? %>
+  <%=cl_image_tag @cocktail.photo, height: 200, width: 300, crop: :fill %>
+<% end %>
+
 <p id="notice"><%= notice %></p>
 <h1><%= @cocktail.name %></h1>
 <h3>Recipe for the Cocktail</h3>
