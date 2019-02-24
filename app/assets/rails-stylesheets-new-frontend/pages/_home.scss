@@ -8,10 +8,10 @@ font-size: 70px;
 text-align: center;
 }
 
-h2{
-
-
+h3{
+  color:pink
 }
+
 p {
   color:pink;
 
@@ -20,11 +20,16 @@ p {
 a{
   color:orange;
 }
+li {
+  color:papayawhip;
+  font-size:strong;
+}
 
 .btn{
   width:280px;
   color:pink;
 }
+
 
 .container {
   max-width: 100%;
@@ -47,9 +52,21 @@ a{
 }
 
 .card{
-     box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
     padding: 16px 16px 16px 16px;
     background-size: cover;
     background-position: center;
+}
+
+#show-page-ul{
+  padding-top:20px
 
 }
+#show-page-ul li {
+  color:papayawhip;
+}
+
+img {
+  border-radius: 20px;
+}
+

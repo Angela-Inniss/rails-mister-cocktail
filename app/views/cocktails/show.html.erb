@@ -1,26 +1,44 @@
 <!-- adding images from cloudinary and writing ruby make sure that if a
 user does not upload an image then don't let them create a cocktail. cl image tag is the tag used in combination with cloudinary to display an image  -->
-<% if @cocktail.photo.present? %>
-  <%=cl_image_tag @cocktail.photo, height: 200, width: 300, crop: :fill %>
-<% end %>
+<div class="container text-center">
 
-<p id="notice"><%= notice %></p>
-<h1><%= @cocktail.name %></h1>
-<h3>Recipe for the Cocktail</h3>
+    <div class="card p-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1455245737663-3edc3b61dd1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60');">
 
-<strong>Ingredients</strong>
-<% @cocktail.doses.each do |dose|%>
-  <div>
-    <%= dose.description %>
-    <%= dose.ingredient.name %>
-    <%= link_to dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } do %>
-    <i class="fa fa-trash destroy_dose"></i>
-  <% end %>
+      <div>
+        <h1><%= @cocktail.name %></h1>
+      </div>
+
+      <div class="row">
+        <div class="col-12 md-8 p-3" id="show-cocktail-img">
+          <% if @cocktail.photo.present? %>
+            <%=cl_image_tag @cocktail.photo, height: 200, width: 300, crop: :fill %>
+          <% end %>
+        </div>
+
+        <div class="col-12 md-4 p-3">
+          <p id="notice"><%= notice %></p>
+          <h3>Cocktail Recipe</h3>
+          <strong>Ingredients</strong>
+          <% @cocktail.doses.each do |dose|%>
+            <div class="p-3">
+              <%= dose.description %>
+              <%= dose.ingredient.name %>
+              <%= link_to dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } do %>
+              <i class="fa fa-trash destroy_dose"></i>
+            <% end %>
+            </div>
+          <% end %>
+
+          <div d-flex>
+            <ul id="show-page-ul">
+              <li><%= link_to 'Add a shot', new_cocktail_dose_path(@cocktail)  %></li>
+              <li><%= link_to 'Go back to cocktails list', cocktails_path  %></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-<% end %>
-
-<%= link_to 'Go back to cocktails list', cocktails_path  %>
-<%= link_to 'Add a dose', new_cocktail_dose_path(@cocktail)  %>
 
 
 
