@@ -64,3 +64,4 @@ gem 'rails-controller-testing', group: [ :test ]
 # Gemfile
 
 gem 'simple_form'
+gem 'dotenv-rails', groups: [:development, :test]
