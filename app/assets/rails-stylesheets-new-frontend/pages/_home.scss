@@ -5,6 +5,7 @@ h1{
 color:pink;
 font-family: 'Satisfy', cursive;
 font-size: 70px;
+text-align: center;
 }
 
 h2{
@@ -43,4 +44,12 @@ a{
 
 .navbar{
   background-color:pink;
+}
+
+.card{
+     box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+    padding: 16px 16px 16px 16px;
+    background-size: cover;
+    background-position: center;
+
 }
