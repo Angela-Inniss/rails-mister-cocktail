@@ -1,10 +1,12 @@
 class CocktailsController < ApplicationController
+  before_action :find_individual_cocktail, only: [:show, :edit, :update, :destroy]
+
   def index
     @cocktails = Cocktail.all
   end
 
   def show
-    @cocktail = Cocktail.find(params[:id])
+    #@cocktail = Cocktail.find(params[:id])
   end
 
 # create method and new methd are linked.
@@ -30,13 +32,26 @@ class CocktailsController < ApplicationController
     @cocktail = Cocktail.new
   end
 
-   def destroy
-    @cocktail = Cocktail.find(params[:id])
+  def edit
+    #@cocktail = Cocktail.find(params[:id])
+  end
+
+  def update
+    @cocktail.update(cocktail_params)
+    redirect_to cocktails_path
+  end
+
+  def destroy
+    #@cocktail = Cocktail.find(params[:id])
     @cocktail.destroy
     redirect_to cocktails_path
   end
 
   def cocktail_params
     params.require(:cocktail).permit(:name, :ingredient, :photo)
+  end
+
+  def find_individual_cocktail
+    @cocktail = Cocktail.find(params[:id])
   end
 end

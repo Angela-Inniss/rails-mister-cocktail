@@ -6,6 +6,7 @@ user does not upload an image then don't let them create a cocktail. cl image ta
 
       <div>
         <h1><%= @cocktail.name %></h1>
+
       </div>
 
       <div class="row">
@@ -32,6 +33,7 @@ user does not upload an image then don't let them create a cocktail. cl image ta
           <div d-flex>
             <ul id="show-page-ul">
               <li><%= link_to 'Add a shot', new_cocktail_dose_path(@cocktail)  %></li>
+              <li><%=link_to 'edit cocktail', edit_cocktail_path%></li>
               <li><%= link_to 'Go back to cocktails list', cocktails_path  %></li>
             </ul>
           </div>
