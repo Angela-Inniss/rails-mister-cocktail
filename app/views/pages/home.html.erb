@@ -1,4 +1,18 @@
 <div class="home-layout">
+  <div clas="home-title">
+    <h1> Welcome to Reggae Rum Cocktails</h1>
+  </div>
+<div class="flex-test">
+  <div class="flex-box-search">
+       <div class="search-bar">
+          <%= form_tag(cocktails_path, method: :get) do %>
+            <%= text_field_tag :search, params[:search], placeholder: "Search a cockail", class: "search", class: "form-control" %>
+        </div>
 
+            <%= submit_tag "Search", class: "button-submit" %>
+
+        <% end %>
+  </div>
+</div>
 
 </div>

@@ -1,8 +1,62 @@
 .home-layout {
     height: calc(100vh - 70px);
     background-image: url(https://cdn.dribbble.com/users/2340887/screenshots/5565883/tropical_sunrise_4x.png);
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
 }
+
+
+ .flex-box-search {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    padding: 10px 5px;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 15px 0 rgba(0,0,0,0.1);
+    position: relative;
+    top: 221px;
+    width: 353px;
+}
+
+
+.form-control{
+  font-family: 'Satisfy', cursive;
+  letter-spacing: 2px;
+}
+.button-submit {
+  border-radius: 1px;
+  color: orange;
+  background-color: #4d2851;
+  width: 100px;
+}
+
+.home-title {
+  color:white;
+}
+
+h1 {
+  color:black;
+}
+.flex-test {
+  display:flex;
+  justify-content:center;
+}
+
+
+body {
+  /* background-color: #333; */
+  font-family: 'Satisfy', cursive;
+  font-size: 10px;
+}
+
+path {
+  fill: transparent;
+}
+
+/* text {
+  fill: #FF9800;
+} */
