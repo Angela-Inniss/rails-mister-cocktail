@@ -17,7 +17,7 @@
     width: 80%;
     background-color: white;
     box-shadow: 0 15px 0 rgba(0,0,0,0.1);
-    position: relative;
+ /*    position: relative; */
     top: 221px;
     width: 353px;
 }
@@ -41,22 +41,67 @@
 h1 {
   color:black;
 }
+
 .flex-test {
   display:flex;
   justify-content:center;
 }
 
 
-body {
-  /* background-color: #333; */
+
+.estrellas {
+  position: relative;
+  width: 520px;
+  height:300px;
+  margin: 0 auto;
+  font-size: 70px;
+}
+.estrellas span {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 70px;
+  height: 300px;
+  margin-left: -35px;
+  line-height: 530px; /* height*2 - font-size */
+  text-align: center;
+  transform-origin: top center;
+}
+.estrellas span:nth-of-type(9)  {
+  transform: rotate(85deg);
+}
+.estrellas span:nth-of-type(8)  {
+  transform: rotate(60deg);
+}
+.estrellas span:nth-of-type(7)  {
+  transform: rotate(40deg);
+}
+.estrellas span:nth-of-type(6)  {
+  transform: rotate(20deg);
+}
+.estrellas span:nth-of-type(5)  {
+  transform: rotate(0deg);
+}
+.estrellas span:nth-of-type(4)  {
+  transform: rotate(-20deg);
+}
+.estrellas span:nth-of-type(3)  {
+  transform: rotate(-40deg);
+}
+.estrellas span:nth-of-type(2)  {
+  transform: rotate(-60deg);
+}
+.estrellas span:nth-of-type(1)  {
+  transform: rotate(-85deg);
+}
+
+/* Reverse mode */
+.inverso {
+  font-weight: bold;
   font-family: 'Satisfy', cursive;
-  font-size: 10px;
 }
-
-path {
-  fill: transparent;
+.inverso span {
+  line-height: 70px;
+  transform-origin: bottom center;
+  /* border: 1px solid red; Only for seeing trick */
 }
-
-/* text {
-  fill: #FF9800;
-} */
