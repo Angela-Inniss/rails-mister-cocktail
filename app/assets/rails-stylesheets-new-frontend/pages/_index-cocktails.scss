@@ -1,39 +1,42 @@
 // Specific CSS for your home-page
 //changes stuff on the index page (homepage)
 
-h1{
+
+h1 {
 color:pink;
 font-family: 'Satisfy', cursive;
 font-size: 70px;
 text-align: center;
+padding-top:20px;
 }
 
-h3{
-  color:pink
-}
-
-p {
-  color:pink;
-
-}
-
-a{
+a {
   color:orange;
 }
 
-li {
+/* li {
   color:papayawhip;
   font-size:strong;
 }
-
-.link-btn{
+ */
+.link-btn {
   text-align:center
 }
-.btn{
+
+/* .btn {
   width:280px;
   color:pink;
-}
+} */
 
+.index-button {
+    font-family: 'Open Sans', 'Helvetica', 'sans-serif';
+    background-color: #fff;
+    padding: 10px 15px;
+    box-shadow: 0 10px 0 rgba(0,0,0,0.1);
+    position: relative;
+    background-color:orange;
+    color:white;
+}
 
 .container {
   max-width: 100%;
@@ -45,32 +48,23 @@ li {
     background-position: center;
     padding: 150px 0;
 
-
 } */
 
-#create-button {
-  color: pink;
-
-}
-
-.navbar{
-  background-color:white;
-}
-
-.card{
+.card {
     box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
     padding: 16px 16px 16px 16px;
     background-size: cover;
     background-position: center;
 }
 
+.card-image{
+  height:200px;
+  width:300px;
+  background-size:cover;
+  background-position:center;
+}
 #show-page-ul{
   padding-top:20px
 
-}
-
-
-img {
-  border-radius: 20px;
 }
 
