@@ -1,26 +1,24 @@
 <!-- adding images from cloudinary and writing ruby make sure that if a
 user does not upload an image then don't let them create a cocktail. cl image tag is the tag used in combination with cloudinary to display an image  -->
-<div class="container text-center">
-
-    <div class="card p-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1455245737663-3edc3b61dd1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60');">
-
+<div class="text-center">
       <div>
         <h1><%= @cocktail.name %></h1>
-
       </div>
-
-      <div class="row">
-        <div class="col-12 md-8 p-3" id="show-cocktail-img">
+     <div class="row justify-content-center">
+        <div class="col-8 col-md-8 col-sm-6 p-3" id="show-cocktail-img">
+          <div class="card m-3">
           <% if @cocktail.photo.present? %>
-            <%=cl_image_tag @cocktail.photo, height: 200, width: 300, crop: :fill %>
+            <%=cl_image_tag @cocktail.photo, class: 'test' %>
           <% end %>
         </div>
+        </div>
 
-        <div class="col-12 md-4 p-3">
+        <div class="col-14 col-md-4 col-sm-6 p-3">
           <p id="notice"><%= notice %></p>
           <h3>Cocktail Recipe</h3>
           <strong>Ingredients</strong>
           <% @cocktail.doses.each do |dose|%>
+
             <div class="p-3">
               <%= dose.description %>
               <%= dose.ingredient.name %>
@@ -29,16 +27,18 @@ user does not upload an image then don't let them create a cocktail. cl image ta
             <% end %>
             </div>
           <% end %>
-
-          <div d-flex>
-            <ul id="show-page-ul">
-              <li><%= link_to 'Add a shot', new_cocktail_dose_path(@cocktail)  %></li>
-              <li><%=link_to 'edit cocktail', edit_cocktail_path%></li>
-              <li><%= link_to 'Go back to cocktails list', cocktails_path  %></li>
-            </ul>
-          </div>
         </div>
       </div>
+
+
+
+        <div class="flex-box">
+            <!-- <ul id="show-page-ul"> -->
+              <li><%= link_to 'Add a shot', new_cocktail_dose_path(@cocktail),class: 'index-button' %></li>
+              <li><%=link_to 'edit cocktail', edit_cocktail_path, class: 'index-button'%></li>
+              <li><%= link_to 'Go back to cocktails list', cocktails_path,class: 'index-button'  %></li>
+            <!-- /ul> -->
+          </div>
     </div>
   </div>
 
