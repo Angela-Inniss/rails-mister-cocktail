@@ -9,6 +9,11 @@ class CocktailsController < ApplicationController
     #@cocktail = Cocktail.find(params[:id])
   end
 
+   def new
+      @cocktail = Cocktail.new
+      @dose = Dose.new
+    end
+
 # create method and new methd are linked.
 # the create method is executed in the new 'view' when the user actually
 # clicks on "create/submit" in the form
@@ -28,9 +33,6 @@ class CocktailsController < ApplicationController
     end
   end
 
-  def new
-    @cocktail = Cocktail.new
-  end
 
   def edit
     #@cocktail = Cocktail.find(params[:id])

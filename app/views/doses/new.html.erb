@@ -1,9 +1,11 @@
-<div class="container">
-  <h1>Add a shot of something</h1>
+<div class="new-dose">
+  <div class="new-form-container-dose">
+    <h1>Add a shot of something</h1>
 
-  <%= simple_form_for [@cocktail, @dose] do |f| %>
-    <%= f.association :ingredient, collection:Ingredient.all %>
-    <%= f.input :description %>
-    <%= f.submit "Add shot", class: "btn btn-primary" %>
-  <% end %>
+    <%= simple_form_for [@cocktail, @dose] do |f| %>
+      <div class="dose-label"><%= f.association :ingredient, label: 'Pick a shot fo yo cocktail',collection:Ingredient.all %></div>
+      <div class="dose-label"><%= f.input :description, label: 'Add a shot of someting' %>
+      <%= f.submit "Add shot", class: "btn btn-primary" %></div>
+    <% end %>
+  </div>
 </div>
