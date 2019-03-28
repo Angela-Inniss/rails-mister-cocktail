@@ -1,0 +1,20 @@
+
+.container-edit{
+  display:flex;
+  justify-content: center;
+  background-color: orange;
+  min-height: calc(100vh - 70px);
+  width: 100%;
+}
+
+.new-form-container-edit{
+  background-image:url(https://cdn.dribbble.com/users/2485171/screenshots/4957193/es-tgif-chic.gif);
+  height:600px;
+  width:500px;
+  padding: 20px;
+  margin: 43px;
+  box-shadow: 20px 20px 20px rgba(0,0,0,0.1);
+  background-size:cover;
+  opacity:1px;
+
+}

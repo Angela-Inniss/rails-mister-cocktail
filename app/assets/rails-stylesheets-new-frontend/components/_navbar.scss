@@ -41,5 +41,15 @@
 }
 
 .logo {
+  background-image:url(https://cdn.dribbble.com/users/730437/screenshots/5356227/logo_6s-01.png);
   height:50px;
+  background-color: #fff;
+  padding: 10px 15px;
+  box-shadow: 0 10px 0 rgba(0,0,0,0.1);
+  position: relative;
+  color:white;
+  border-radius:50px;
+  /* background-size:cover; */
+  object-fit:cover;
+  width:50px;
 }

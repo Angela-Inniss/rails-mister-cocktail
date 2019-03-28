@@ -1,0 +1,19 @@
+.new-form-container-dose {
+ /*  background-color: pink; */
+  background-image:url(https://cdn.dribbble.com/users/251610/screenshots/5312594/sunset_animation_v1_800x600.gif);
+  height:600px;
+  width:500px;
+  padding: 20px;
+  margin: 43px;
+  box-shadow: 20px 20px 20px rgba(0,0,0,0.1);
+  background-size:cover;
+  opacity:1px;
+}
+
+.new-dose {
+  display:flex;
+  justify-content: center;
+  background-color: orange;
+  min-height: calc(100vh - 70px);
+  width: 100%;
+}

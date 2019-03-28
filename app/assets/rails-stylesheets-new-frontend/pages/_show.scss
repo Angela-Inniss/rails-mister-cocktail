@@ -10,6 +10,7 @@ ul{
 .flex-box {
   display:flex;
   justify-content:space-around;
+  list-style-type:none;
 }
 
 .card-show {
@@ -31,4 +32,8 @@ ul{
 
 body {
   background-color: #ffbeaa;
+}
+.dose-label {
+  font-weight:bold;
+  font-size:20px;
 }

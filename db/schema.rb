@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(version: 2019_03_27_123102) do
     t.bigint "cocktail_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["cocktail_id"], name: "index_doses_on_cocktail_id"
+    t.index ["cocktail_idd"], name: "index_doses_on_cocktail_id"
     t.index ["ingredient_id"], name: "index_doses_on_ingredient_id"
   end
 
