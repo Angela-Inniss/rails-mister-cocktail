@@ -1,0 +1,37 @@
+.new-cocktail {
+  display:flex;
+  justify-content: center;
+  background-color: orange;
+  min-height: calc(100vh - 70px);
+  width: 100%;
+}
+
+.new-form-container {
+ /*  background-color: pink; */
+  background-image:url(https://cdn.dribbble.com/users/171888/screenshots/3750027/kirra_surf_ex-dribbble.jpg);
+  height:600px;
+  width:500px;
+  padding: 20px;
+  margin: 43px;
+  box-shadow: 20px 20px 20px rgba(0,0,0,0.1);
+  background-size:cover;
+  opacity:1px;
+}
+
+.label-color {
+  color:white;
+  font-weight:bold;
+  font-size:15px;
+}
+
+
+.btn-primary {
+  padding-top:20px;
+    font-family: 'Open Sans', 'Helvetica', 'sans-serif';
+    background-color: #fff;
+    padding: 10px 15px;
+    box-shadow: 0 10px 0 rgba(0,0,0,0.1);
+    position: relative;
+    background-color:orange;
+    color:white;
+}
