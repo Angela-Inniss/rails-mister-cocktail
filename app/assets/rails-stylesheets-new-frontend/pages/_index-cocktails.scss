@@ -26,6 +26,9 @@ li {
   font-size:strong;
 }
 
+.link-btn{
+  text-align:center
+}
 .btn{
   width:280px;
   color:pink;
@@ -34,15 +37,16 @@ li {
 
 .container {
   max-width: 100%;
+  background-color: #ffbeaa;
 }
 
-.banner {
+/* .banner {
  background-size: cover;
     background-position: center;
     padding: 150px 0;
 
 
-}
+} */
 
 #create-button {
   color: pink;
