@@ -10,6 +10,7 @@
 }
 
 
+/*changing search box size epending on screene*/
 
 @media only screen and (min-width: 1200px) {
  .flex-box-search {
@@ -39,7 +40,7 @@
 }
 
 
-@media only screen and (min-width:   576pxpx) {
+@media only screen and (min-width: 576pxpx) {
   .flex-box-search {
     width: 150px;
   }
@@ -71,7 +72,6 @@ h1 {
 }
 
 
-
 .estrellas {
   position: relative;
   width: 520px;
@@ -84,7 +84,7 @@ h1 {
   bottom: 0;
   left: 50%;
   width: 70px;
-  height: 300px;
+  height: 250px;
   margin-left: -35px;
   line-height: 530px; /* height*2 - font-size */
   text-align: center;
@@ -128,3 +128,34 @@ h1 {
   transform-origin: bottom center;
   /* border: 1px solid red; Only for seeing trick */
 }
+
+
+/*hiding cocktails arch when screen smaller than 768 pixels  */
+
+@media screen and (max-width: 768px) {
+   .estrellas {
+    display: none;
+  }
+}
+
+/*hiding h1 title "in the sun" screen smaller than 768 pixels  */
+@media screen and (max-width: 768px) {
+   .home-title {
+    display: none;
+  }
+}
+
+/*this shows the h1  class title2  "search for a cocktail" when screen is smaller than 768 pixels  */
+@media screen and (min-width: 768px) {
+  .home-title2 {
+    display: none;
+    font-size:
+    font-size: 40px;
+    padding: 200px;
+    text-align: center;
+}
+
+
+  }
+}
+
