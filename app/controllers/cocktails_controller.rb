@@ -2,22 +2,21 @@ class CocktailsController < ApplicationController
   before_action :find_individual_cocktail, only: [:show, :edit, :update, :destroy]
 
   def index
-    @cocktails = Cocktail.all
-      if params[:search].present?
-        @search = params[:search]
+    if params[:search].present?
+        @cocktails = Cocktail.where("name ILIKE ?", "%#{params[:search]}%")
       else
-        @search = ""
+        @cocktails = Cocktail.all
       end
+    end
   end
-
 
   def show
     #@cocktail = Cocktail.find(params[:id])
   end
 
    def new
-      @cocktail = Cocktail.new
-      @dose = Dose.new
+    @cocktail = Cocktail.new
+    @dose = Dose.new
    end
 
 # create method and new methd are linked.
@@ -64,4 +63,3 @@ private
   def find_individual_cocktail
     @cocktail = Cocktail.find(params[:id])
   end
-end
