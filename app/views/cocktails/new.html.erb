@@ -1,10 +1,8 @@
 <div class="new-cocktail">
   <div class="new-form-container-cocktail">
     <h1>Create a new cocktail</h1>
-    <%= simple_form_for [@cocktail] do |f| %>
+    <%= simple_form_for (@cocktail) do |f| %>
       <div class="label-color"><%= f.input :name, label: 'Add cocktail name here'%></div>
-
-
       <div class="label-color"><%= f.input :photo, label: 'Add a cool image' %></div>
       <%= f.input :photo_cache, as: :hidden %>
       <%= f.submit "Create Cocktail", class: "btn btn-primary" %>
