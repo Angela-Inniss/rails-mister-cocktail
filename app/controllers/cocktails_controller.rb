@@ -3,7 +3,13 @@ class CocktailsController < ApplicationController
 
   def index
     @cocktails = Cocktail.all
+      if params[:search].present?
+        @search = params[:search]
+      else
+        @search = ""
+      end
   end
+
 
   def show
     #@cocktail = Cocktail.find(params[:id])
@@ -12,7 +18,7 @@ class CocktailsController < ApplicationController
    def new
       @cocktail = Cocktail.new
       @dose = Dose.new
-    end
+   end
 
 # create method and new methd are linked.
 # the create method is executed in the new 'view' when the user actually
