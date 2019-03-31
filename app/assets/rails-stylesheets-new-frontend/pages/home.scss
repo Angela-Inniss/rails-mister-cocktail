@@ -61,8 +61,8 @@
   }
 }
 
-/*this will centre the search button when the screen is smaller than 768 pixels*/
-@media screen and (min-width:400px) {
+/*this will centre the search button when the screen is smaller than 400 pixels*/
+@media screen and (min-width:200px) {
   .button-submit {
    /*  border-radius: 1px;
    color: orange;
