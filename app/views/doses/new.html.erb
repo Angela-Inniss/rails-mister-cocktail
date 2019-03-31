@@ -3,8 +3,9 @@
     <h1>Add a shot of something</h1>
 
     <%= simple_form_for [@cocktail, @dose] do |f| %>
-      <div class="dose-label"><%= f.association :ingredient, label: 'Pick a shot fo yo cocktail',collection:Ingredient.all %></div>
-      <div class="dose-label"><%= f.input :description, label: 'Add a shot of someting' %>
+      <div class="dose-label"><%= f.association :ingredient, label: 'Add a shot to your cocktail',collection:Ingredient.all %></div>
+      <div class="dose-label"><%= f.input :description, label: 'Shot description',
+      placeholder: 'e.g. Sweet tasting' %>
       <%= f.submit "Add shot", class: "btn btn-primary" %></div>
     <% end %>
   </div>

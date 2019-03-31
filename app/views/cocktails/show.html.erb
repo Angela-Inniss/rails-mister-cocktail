@@ -14,14 +14,15 @@ user does not upload an image then don't let them create a cocktail. cl image ta
         </div>
 
         <div class="col-14 col-md-4 col-sm-6 p-3">
-          <p id="notice"><%= notice %></p>
-          <h3> What's in this cocktail?</h3>
-          <strong>Ingredients:</strong>
-          <% @cocktail.doses.each do |dose|%>
+          <h3>What's in a <%= @cocktail.name %> cocktai?</h3>
 
+          <p id="notice"><%= notice %></p>
+
+          <strong>Shots:</strong>
+          <% @cocktail.doses.each do |dose|%>
             <div class="p-3">
-              <%= dose.ingredient.name%>:
               <%= dose.description %>
+              <%= dose.ingredient.name%>
               <%= link_to dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } do %>
               <i class="fa fa-trash destroy_dose"></i>
             <% end %>
@@ -35,7 +36,7 @@ user does not upload an image then don't let them create a cocktail. cl image ta
         <div class="flex-box">
             <!-- <ul id="show-page-ul"> -->
               <li><%= link_to 'Add a shot', new_cocktail_dose_path(@cocktail),class: 'index-button' %></li>
-              <li><%=link_to 'edit cocktail', edit_cocktail_path, class: 'index-button'%></li>
+              <li><%=link_to 'Edit cocktail name', edit_cocktail_path, class: 'index-button'%></li>
               <li><%= link_to 'Go back to cocktails list', cocktails_path,class: 'index-button'  %></li>
             <!-- /ul> -->
           </div>
