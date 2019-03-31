@@ -45,18 +45,32 @@ a {
 
 } */
 
+/*desktop card view */
+@media only screen and (min-width: 1200px) {
+ .card {
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+    padding: 16px 16px 16px 16px;
+    background-size: cover;
+    background-position: center;
+    height: 355px;
+  }
+}
+
+/*mobile card view*/
+@media only screen and (min-width: 576px) {
 .card {
     box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
     padding: 16px 16px 16px 16px;
     background-size: cover;
     background-position: center;
-
-    height: 355px;
+  }
 }
-
 
 #show-page-ul{
   padding-top:20px
 
 }
 
+body img {
+  width:100%;
+}
