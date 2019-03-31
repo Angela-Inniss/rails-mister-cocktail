@@ -10,7 +10,7 @@
 }
 
 
-/*changing search box size epending on screene*/
+/*changing search box size depending on screen - desktop*/
 
 @media only screen and (min-width: 1200px) {
  .flex-box-search {
@@ -47,15 +47,34 @@
 }
 
 
-.form-control{
+.form-control {
   font-family: 'Satisfy', cursive;
   letter-spacing: 2px;
 }
+
+@media only screen and (min-width: 1200px) {
 .button-submit {
   border-radius: 1px;
   color: orange;
   background-color: #4d2851;
   width: 100px;
+  }
+}
+
+/*this will centre the search button when the screen is smaller than 768 pixels*/
+@media screen and (min-width:400px) {
+  .button-submit {
+   /*  border-radius: 1px;
+   color: orange;
+   background-color: #4d2851;
+   width: 100px; */
+    border-radius: 1px;
+    color: orange;
+    background-color: #4d2851;
+    position: relative;
+    width:100%;
+    /* margin-top:10px; */
+  }
 }
 
 .home-title {
@@ -145,7 +164,7 @@ h1 {
   }
 }
 
-/*this shows the h1  class title2  "search for a cocktail" when screen is smaller than 768 pixels  */
+/*this shows the h1 class title2  "search for a cocktail" when screen is smaller than 768 pixels  */
 @media screen and (min-width: 768px) {
   .home-title2 {
     display: none;
@@ -154,4 +173,3 @@ h1 {
     text-align: center;
   }
 }
-
