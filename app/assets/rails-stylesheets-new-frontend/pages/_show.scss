@@ -6,11 +6,40 @@
 ul{
   list-style: none;
 }
-
+/*
 .flex-box {
   display:flex;
   justify-content:space-around;
   list-style-type:none;
+} */
+
+/* when the screen is 1200 or less display buttons in a flex box and display flex
+so that the buttons are all in a row 992 and above do the following*/
+@media only screen and (min-width: 992px) {
+.flex-box {
+  display:flex;
+  justify-content:space-around;
+  list-style-type:none;
+  }
+}
+
+/* when the screen hits 576px (mobile) or less remove flex box so that
+ buttons are presented in a column 200 and above do the following */
+@media only screen and (min-width: 200px) {
+.flex-box {
+  justify-content:space-around;
+  list-style-type:none;
+  }
+}
+
+/* when the screen hits 576px (mobile) or less remove flex box so that
+ buttons are presented in a column  and with margin between them*/
+@media only screen and (min-width: 200px) {
+.flex-box li {
+  margin:30px;
+  justify-content:space-around;
+  list-style-type:none;
+  }
 }
 
 .card-show {
